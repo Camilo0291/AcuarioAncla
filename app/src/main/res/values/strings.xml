@@ -1,0 +1,37 @@
+<resources>
+    --Login
+    <string name="login">Iniciar Sesión</string>
+    <string name="email">Correo</string>
+    <string name="pass">Contraseña</string>
+    <string name="btnStart">Iniciar Sesión</string>
+    <string name="btnCreate">Crear Cuenta</string>
+    <string name="ask">¿Has olvidado tu contraseña?</string>
+
+    --Register
+    <string name="register">Inscribirse</string>
+    <string name="emailRegister">Correo</string>
+    <string name="passRegister">Contraseña</string>
+    <string name="confirmPass">Confirmar contraseña</string>
+    <string name="btnRegister">Ingresar</string>
+    <string name="askRegister">Tener una cuenta?</string>
+    <string name="text">Iniciar Sesión</string>
+
+    --Menu
+    <string name="name">Juan Lopez</string>
+    <string name="emailMenu">juanadmin@gmail.com</string>
+    <string name="menu">Menú</string>
+    <string name="customers">Clientes</string>
+    <string name="suppliers">Proveedores</string>
+    <string name="sales">Ventas</string>
+    <string name="shopping">Compras</string>
+    <string name="users">Usuarios</string>
+    <string name="products">Productos</string>
+
+    --Manager
+    <string name="manageClients">Gestionar clientes</string>
+    <string name="edit">Editar</string>
+    <string name="add">Añadir</string>
+    <string name="goBack">Regresar</string>
+    <string name="app_name" />
+
+</resources>
