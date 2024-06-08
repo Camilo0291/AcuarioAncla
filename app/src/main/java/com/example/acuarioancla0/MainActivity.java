@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         txtUser = findViewById(R.id.txtUser);
         txtPass = findViewById(R.id.txtPass);
         btnStart = findViewById(R.id.btnStart);
-        btnCreate = findViewById(R.id.btnCreate);
+
 
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,13 +46,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnCreate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Registro.class);
-                startActivity(intent);
-            }
-        });
+
+
+
     }
 
     private void loginUser(String email, String password) {

@@ -1,11 +1,13 @@
 package com.example.acuarioancla0;
-
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.View;
 import android.widget.Button;
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
+
 
 public class Menu extends AppCompatActivity {
 
@@ -27,7 +29,21 @@ public class Menu extends AppCompatActivity {
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                iniciarActividad(manager.class);
+                String buttonIdentifier = "";
+                if (v.getId() == R.id.btnCustomers) {
+                    buttonIdentifier = "Customers";
+                } else if (v.getId() == R.id.btnSuppliers) {
+                    buttonIdentifier = "Suppliers";
+                } else if (v.getId() == R.id.btnSales) {
+                    buttonIdentifier = "Sales";
+                } else if (v.getId() == R.id.btnShopping) {
+                    buttonIdentifier = "Shopping";
+                } else if (v.getId() == R.id.btnUsers) {
+                    buttonIdentifier = "Users";
+                } else if (v.getId() == R.id.btnProducts) {
+                    buttonIdentifier = "Products";
+                }
+                iniciarActividad(manager.class, buttonIdentifier);
             }
         };
 
@@ -39,8 +55,9 @@ public class Menu extends AppCompatActivity {
         btnProducts.setOnClickListener(onClickListener);
     }
 
-    private void iniciarActividad(Class<?> claseDestino) {
+    private void iniciarActividad(Class<?> claseDestino, String buttonIdentifier) {
         Intent intent = new Intent(Menu.this, claseDestino);
+        intent.putExtra("BUTTON_IDENTIFIER", buttonIdentifier);
         startActivity(intent);
     }
 }

@@ -17,8 +17,7 @@
     <string name="text">Iniciar Sesión</string>
 
     --Menu
-    <string name="name">Juan Lopez</string>
-    <string name="emailMenu">juanadmin@gmail.com</string>
+    <string name="name">Camilo Quintana</string>
     <string name="menu">Menú</string>
     <string name="customers">Clientes</string>
     <string name="suppliers">Proveedores</string>
@@ -28,8 +27,8 @@
     <string name="products">Productos</string>
 
     --Manager
-    <string name="manageClients">Gestionar clientes</string>
-    <string name="edit">Editar</string>
+    <string name="manageTtile">Entitie title</string>
+    <string name="edit">Mostrar</string>
     <string name="add">Añadir</string>
     <string name="goBack">Regresar</string>
     <string name="app_name" />
