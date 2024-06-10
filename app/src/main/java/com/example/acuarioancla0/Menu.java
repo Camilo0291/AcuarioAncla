@@ -1,12 +1,17 @@
 package com.example.acuarioancla0;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
 import androidx.activity.EdgeToEdge;
+
+import com.example.acuarioancla0.db.DbHelper;
 
 
 public class Menu extends AppCompatActivity {
@@ -26,6 +31,8 @@ public class Menu extends AppCompatActivity {
         btnUsers = findViewById(R.id.btnUsers);
         btnProducts = findViewById(R.id.btnProducts);
 
+
+
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,7 +50,7 @@ public class Menu extends AppCompatActivity {
                 } else if (v.getId() == R.id.btnProducts) {
                     buttonIdentifier = "Products";
                 }
-                iniciarActividad(manager.class, buttonIdentifier);
+                iniciarActividad(Manager.class, buttonIdentifier);
             }
         };
 

@@ -33,4 +33,31 @@
     <string name="goBack">Regresar</string>
     <string name="app_name" />
 
+    -- Regitrar Usuario
+    <string name="userName">Nombre</string>
+    <string name="userLastName">Apellido</string>
+    <string name="userEmail">Correo</string>
+    <string name="userPhone">Teléfono</string>
+    <string name="userUser">Usuario en la app</string>>
+    <string name="userPass">Contraseña</string>
+    <string name="userRol">Rol</string>
+    <string name="btnRegisterUser">Registrar</string>
+
+    -- Registrar Producto
+    <string name="productName">Nombre Producto</string>
+    <string name="ProductDescription">Descripción Producto</string>
+    <string name="ProductType">Tipo Producto</string>
+    <string name="ProductSellPrice">Precio de venta</string>
+    <string name="ProductBuyPrice">Precio de compra</string>
+    <string name="ProductAvailable">Unidades disponibles</string>
+    <string name="btnRegisterProduct">Registrar</string>
+
+    -- Refistrar Venta
+    <string name="saleDate">Fecha de venta</string>
+    <string name="saleTotal">Total venta</string>
+    <string name="salePaymentMethod">Método de pago</string>">
+    <string name="saleIdUser">ID del usuario</string>
+    <string name="saleIdCustomer">ID del cliente</string>
+    <string name="btnRegisterSale">Registrar</string>
+
 </resources>
