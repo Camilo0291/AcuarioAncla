@@ -12,8 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.acuarioancla0.db.DbCustomers;
-import com.example.acuarioancla0.db.DbProductos;
+import com.example.acuarioancla0.db.DbClientes;
 
 public class NuevoClienteActivity extends AppCompatActivity {
     EditText txtCustomerDocumentType,txtCustomerDocumentNumber,txtCustomerName,txtCustomerLastName,txtCustomerEmail;
@@ -42,7 +41,7 @@ public class NuevoClienteActivity extends AppCompatActivity {
         btnCustomerRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DbCustomers dbCustomers = new  DbCustomers(NuevoClienteActivity.this);
+                DbClientes dbCustomers = new DbClientes(NuevoClienteActivity.this);
                 long id = dbCustomers.insertarCliente(txtCustomerDocumentType.getText().toString(),txtCustomerDocumentNumber.getText().toString(),
                         txtCustomerName.getText().toString(),txtCustomerLastName.getText().toString(),txtCustomerEmail.getText().toString());
                 if(id > 0){

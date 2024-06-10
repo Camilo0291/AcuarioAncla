@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Manager extends AppCompatActivity {
 
-    Button btnGoBack,btnAnadir;
+    Button btnGoBack,btnAnadir,btnMostrar;;
     TextView txtTitle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +26,40 @@ public class Manager extends AppCompatActivity {
         btnGoBack = findViewById(R.id.btnGoBack);
         txtTitle = findViewById(R.id.textView2);
         btnAnadir = findViewById(R.id.btnAnadir);
+        btnMostrar = findViewById(R.id.btnMostrar);
         Intent intent = getIntent();
         String buttonIdentifier = intent.getStringExtra("BUTTON_IDENTIFIER");
 
-
+        btnMostrar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                switch (buttonIdentifier) {
+                    case "Customers":
+                        Intent intent8 = new Intent(Manager.this, MostrarClientesActivity.class);
+                        startActivity(intent8);
+                        break;
+                    case "Suppliers":
+//                        Intent intent3 = new Intent(Manager.this, NuevoProveedorActivity.class);
+//                        startActivity(intent3);
+                        break;
+                    case "Sales":
+//                        Intent intent4 = new Intent(Manager.this, NuevaVentaActivity.class);
+//                        startActivity(intent4);
+                        break;
+                    case "Shopping":
+//                        Intent intent5 = new Intent(Manager.this, NuevaCompraActivity.class);
+//                        startActivity(intent5);
+                        break;
+                    case "Users":
+//                        Intent intent6 = new Intent(Manager.this, NuevoUsuarioActivity.class);
+//                        startActivity(intent6);
+                        break;
+                    case "Products":
+//                        Intent intent7 = new Intent(Manager.this, NuevoProductoActivity.class);
+//                        startActivity(intent7);
+                        break;
+                }
+            }
+                                      });
 
         // Boton para añadir un registro
 
