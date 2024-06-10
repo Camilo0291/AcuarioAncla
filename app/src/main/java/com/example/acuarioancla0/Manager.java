@@ -37,20 +37,20 @@ public class Manager extends AppCompatActivity {
             public void onClick(View v) {
                switch (buttonIdentifier) {
                    case "Customers":
-//                       Intent intent2 = new Intent(Manager.this, NuevoCustomerActivity.class);
-//                       startActivity(intent2);
+                       Intent intent2 = new Intent(Manager.this, NuevoClienteActivity.class);
+                       startActivity(intent2);
                        break;
                    case "Suppliers":
-//                        Intent intent3 = new Intent(Manager.this, NuevoSupplierActivity.class);
-//                        startActivity(intent3);
-//                        break;
+                        Intent intent3 = new Intent(Manager.this, NuevoProveedorActivity.class);
+                        startActivity(intent3);
+                        break;
                     case "Sales":
                         Intent intent4 = new Intent(Manager.this, NuevaVentaActivity.class);
                         startActivity(intent4);
                         break;
                     case "Shopping":
-//                        Intent intent5 = new Intent(Manager.this, NuevoShoppingActivity.class);
-//                        startActivity(intent5);
+                        Intent intent5 = new Intent(Manager.this, NuevaCompraActivity.class);
+                        startActivity(intent5);
                         break;
                         case "Users":
                           Intent intent6 = new Intent(Manager.this, NuevoUsuarioActivity.class);

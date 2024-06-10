@@ -47,6 +47,7 @@ public class NuevoProductoActivity extends AppCompatActivity {
                         txtProductSellPrice.getText().toString(),txtProductBuyPrice.getText().toString(),txtProductAvailable.getText().toString());
                 if(id > 0){
                     Toast.makeText(NuevoProductoActivity.this, "Producto Registrado", Toast.LENGTH_SHORT).show();
+                    limpiarCampos();
                 }else{
                     Toast.makeText(NuevoProductoActivity.this, "Error al registrar producto", Toast.LENGTH_SHORT).show();
                 }

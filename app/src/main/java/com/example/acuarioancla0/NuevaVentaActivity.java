@@ -12,7 +12,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.acuarioancla0.db.DbProductos;
 import com.example.acuarioancla0.db.DbVentas;
 
 public class NuevaVentaActivity extends AppCompatActivity {
@@ -35,7 +34,7 @@ public class NuevaVentaActivity extends AppCompatActivity {
             txtSaleIdUser = findViewById(R.id.txtSaleIdUser);
             txtSaleIdCustomer = findViewById(R.id.txtSaleIdCustomer);
 
-            btnVentaRegister = findViewById(R.id.btnVentaRegister);
+            btnVentaRegister = findViewById(R.id.btnProviderRegister);
             btnGoBack = findViewById(R.id.btnGoBack);
 
             btnVentaRegister.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +58,12 @@ public class NuevaVentaActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
 
+                    finish();
+                }
+            });
+            btnGoBack.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
                     finish();
                 }
             });

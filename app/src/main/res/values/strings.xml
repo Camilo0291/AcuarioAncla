@@ -60,4 +60,24 @@
     <string name="saleIdCustomer">ID del cliente</string>
     <string name="btnRegisterSale">Registrar</string>
 
+    -- Registrar Cliente
+    <string name="customerDocumentType">Tipo de documento</string>
+    <string name="customerDocumentNumber">Número de documento</string>
+    <string name="customerName">Nombre Cliente</string>
+    <string name="customerLastName">Apellido Cliente</string>
+    <string name="customerEmail">Correo Cliente</string>
+    <string name="btnRegisterCustomer">Registrar</string>
+
+    -- Registrar Proveedor
+    <string name="providerName">Nombre Proveedor</string>
+    <string name="providerPhone">Teléfono Proveedor</string>
+    <string name="providerEmail">Correo Proveedor</string>
+    <string name="btnRegisterProvider">Registrar</string>
+
+    -- Registrar Compra
+    <string name="purchasMethodPayment">Método de pago</string>
+    <string name="purchaseTotal">Total compra</string>
+    <string name="purchaseUserId">ID del usuario</string>
+
+
 </resources>
