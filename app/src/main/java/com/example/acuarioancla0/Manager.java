@@ -38,24 +38,24 @@ public class Manager extends AppCompatActivity {
                         startActivity(intent8);
                         break;
                     case "Suppliers":
-//                        Intent intent3 = new Intent(Manager.this, NuevoProveedorActivity.class);
-//                        startActivity(intent3);
+                        Intent intent13 = new Intent(Manager.this, MostrarProveedoresActivity.class);
+                        startActivity(intent13);
                         break;
                     case "Sales":
-//                        Intent intent4 = new Intent(Manager.this, NuevaVentaActivity.class);
-//                        startActivity(intent4);
+                        Intent intent12 = new Intent(Manager.this, MostrarVentasActivity.class);
+                        startActivity(intent12);
                         break;
                     case "Shopping":
-//                        Intent intent5 = new Intent(Manager.this, NuevaCompraActivity.class);
-//                        startActivity(intent5);
+                        Intent intent9 = new Intent(Manager.this, MostrarComprasActivity.class);
+                        startActivity(intent9);
                         break;
                     case "Users":
-//                        Intent intent6 = new Intent(Manager.this, NuevoUsuarioActivity.class);
-//                        startActivity(intent6);
+                        Intent intent10 = new Intent(Manager.this, MostrarUsuariosActivity.class);
+                        startActivity(intent10);
                         break;
                     case "Products":
-//                        Intent intent7 = new Intent(Manager.this, NuevoProductoActivity.class);
-//                        startActivity(intent7);
+                        Intent intent11 = new Intent(Manager.this, MostrarProductosActivity.class);
+                        startActivity(intent11);
                         break;
                 }
             }

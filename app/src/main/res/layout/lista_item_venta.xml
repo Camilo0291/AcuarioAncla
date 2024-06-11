@@ -7,7 +7,16 @@
     android:padding="8dp">
 
     <TextView
-        android:id="@+id/viewCustomerName"
+        android:id="@+id/viewSaleDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Nombre Apellido"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/viewSaleTotal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
@@ -17,7 +26,7 @@
         android:textSize="19sp" />
 
     <TextView
-        android:id="@+id/viewDocumentNumber"
+        android:id="@+id/viewSalePayMethod"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
@@ -27,13 +36,23 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/viewCustomerEmail"
+        android:id="@+id/viewSaleIdUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="Email"
         android:textColor="@color/black"
-        android:textSize="17sp" />
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/viewSaleIdCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
 
 </LinearLayout>

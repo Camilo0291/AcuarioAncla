@@ -15,6 +15,21 @@
         android:theme="@style/Theme.AcuarioAncla0"
         tools:targetApi="31">
         <activity
+            android:name=".MostrarProveedoresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MostrarVentasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MostrarProductosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MostrarUsuariosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MostrarComprasActivity"
+            android:exported="false" />
+        <activity
             android:name=".MostrarClientesActivity"
             android:exported="false" />
         <activity
